@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div>
-      <p>Copyright ©</p>
+      <p>Copyright © 2024 Chanachai Chamnanmor 660612140</p>
     </div>
   );
 }
