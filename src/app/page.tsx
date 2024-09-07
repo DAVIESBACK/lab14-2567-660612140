@@ -1,6 +1,6 @@
 "use client";
 import { Container, Text, Title,Rating,Textarea,Button,Divider,Group,Pagination} from "@mantine/core";
-import { useState } from 'react';
+
 
 export default function Home() {
   return (
