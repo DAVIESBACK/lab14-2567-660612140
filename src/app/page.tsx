@@ -1,13 +1,14 @@
 "use client";
 import { Container, Text, Title,Rating,Textarea,Button,Divider,Group,Pagination} from "@mantine/core";
-
+import { useState } from 'react';
 
 export default function Home() {
+  const [value, setValue] = useState(0);
   return (
     <Container size="600px">
       <Title order={2}>Food Review 🍕</Title>
       <Title order={4} mt="md" >Your rating</Title>
-      <Rating value={0} readOnly size="lg"></Rating>
+      <Rating value={value} onChange={setValue} size="lg"/>
       <Textarea
       label="Your review"
       placeholder="Do you enjoy eating?"
